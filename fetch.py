@@ -3,6 +3,12 @@
 from os import environ, popen
 import random
 
+# check config
+import sys
+from os.path import expanduser
+
+sys.path.append(expanduser('~/.config/fetch'))
+
 from config import fetch_list, pre, sep
 
 #get various infos
